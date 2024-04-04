@@ -40,4 +40,11 @@ spring:
         event-out:
           destination: FinalProject
           contentType: application/json
-
+logging:
+  level:
+    root: ${INVENTORY_LOG_LEVEL}
+    org:
+      hibernate:
+        SQL: ${INVENTORY_LOG_LEVEL}
+      springframework:
+        cloud: ${INVENTORY_LOG_LEVEL}
