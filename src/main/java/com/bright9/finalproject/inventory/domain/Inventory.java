@@ -26,7 +26,7 @@ public class Inventory {
 
     @PostUpdate
     public void onPostUpdate() {
-        
+
     }
 
     public static InventoryRepository repository() {
